@@ -27,7 +27,7 @@ const getters = {
       .value()
   },
 }
-const actions = {
+export const actions = {
   LOAD({ commit }) {
     DB.archives.getAll(archives => {
       commit('SET', archives)
